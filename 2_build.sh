@@ -1,1 +1,1 @@
-cargo build --release
+cargo build --target=armv7-unknown-linux-gnueabihf
