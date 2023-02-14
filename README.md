@@ -1,5 +1,10 @@
 # Rust Access Control for PLC
 This project is a simple access control program for a PLC device, written in Rust. The program prompts the user to enter a 4-digit password, and if the correct password is entered, the program unlocks the door or device. If an incorrect password is entered, the program triggers an alarm or other security measure.
+## How to build
+`apt install gcc-arm-linux-gnueabihf`
+`rustup target add armv7-unknown-linux-gnueabihf`
+`export CARGO_TARGET_ARMV7_UNKNOWN_LINUX_GNUEABIHF_LINKER=/usr/bin/arm-linux-gnueabihf-gcc`
+`cargo build --target=armv7-unknown-linux-gnueabihf`
 
 ## How to Use
 - Connect the PLC device to your computer via USB or other connection.
