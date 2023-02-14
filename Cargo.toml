@@ -1,8 +1,15 @@
 [package]
-name = "Rust-PLC-Security"
+name = "access-control"
 version = "0.1.0"
-edition = "2021"
+edition = "2018"
 
-# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+[lib]
+name = "access_control"
+crate-type = ["cdylib"]
 
 [dependencies]
+
+[build-dependencies]
+
+[target.armv7-unknown-linux-gnueabihf]
+rustflags = ["-C", "target-feature=+vfp3,-d32"]
