@@ -7,4 +7,4 @@
 # rustup target add armv7-unknown-linux-gnueabihf
 
 # Create a new Rust project
-cargo init
+# cargo init

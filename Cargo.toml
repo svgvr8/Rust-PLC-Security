@@ -3,6 +3,10 @@ name = "access-control"
 version = "0.1.0"
 edition = "2018"
 
+[[bin]]
+name = "my_binary"
+path = "src/lib.rs"
+
 [lib]
 name = "access_control"
 crate-type = ["cdylib"]

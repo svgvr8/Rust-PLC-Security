@@ -1,0 +1,1 @@
+cargo run my_binary
